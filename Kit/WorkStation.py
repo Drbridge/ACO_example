@@ -10,6 +10,7 @@ class WorkStation(object):
         self.costTime = 0
         self.costMatrix = cost
 
+    # 重置工作站的状态为初态
     def init(self):
         self.startTime = 0
         self.endTime = 0
@@ -24,7 +25,10 @@ class WorkStation(object):
             print '%s, %s' % ('can not get cost time', e)
             return 0
 
+    # 开始工作，自动计算本次工作所用的时间，消耗时间为costTime，完成时间为endTime
     def startJob(self, obj, start = 0):
+        'obj: 货物名'
+        'start = 0: 开始工作时间，默认为0时刻'
         if start == 0:
             self.startTime = self.endTime
         else:
