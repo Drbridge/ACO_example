@@ -16,7 +16,7 @@ a demo of ACO algorithm
             本模块完成对ACO的参数初始化、运行控制与结果显示
 #
 # 算法说明
-## step 1, 初始化起吊设备与小车的耗时时间表，craneCost, ehicleCost
+## step 1, 初始化起吊设备与小车的耗时时间表
 ## step 2, 初始化蚂蚁
 ## step 3, 随机分布蚂蚁，使蚂蚁随机选择起始货物
 ## step 4, 对每只蚂蚁下一步可选的货物计算选择概率
